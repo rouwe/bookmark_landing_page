@@ -1,0 +1,22 @@
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+    /* Logo */
+    
+    /* >>> Mobile Nav Menu Active <<< 
+    .logo-text {
+        fill: rgb(246, 247, 248);
+    }
+    .logo-circle {
+        fill:rgb(246, 247, 248);
+    }
+    .logo-img {
+        fill: #333950;
+    } */
