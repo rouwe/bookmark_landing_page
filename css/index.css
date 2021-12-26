@@ -1,5 +1,8 @@
 :root {
     font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+* {
     box-sizing: border-box;
 }
 body {
@@ -7,16 +10,89 @@ body {
     padding: 0px;
 }
 
-/* Header */
-    /* Logo */
-    
-    /* >>> Mobile Nav Menu Active <<< 
-    .logo-text {
-        fill: rgb(246, 247, 248);
-    }
-    .logo-circle {
-        fill:rgb(246, 247, 248);
-    }
-    .logo-img {
-        fill: #333950;
-    } */
+/* Header Section*/
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    background-color: rgb(255, 255, 255);
+}
+/* Main Menu */
+.nav-icon {
+    align-self: center;
+}
+.main-nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 30px;
+    background-color: rgba(37, 43, 70, 0.96);
+}
+/* Navigation Head */
+.main-menu-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu-logo-text, .menu-logo-circle{
+    fill:rgb(237, 242, 246);
+}
+.menu-logo-img {
+    fill:rgb(37, 43, 70);
+}
+/* Navigation Body */
+.main-menu-body {
+    width: 100%;
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 2.5rem;
+}
+.main-menu-body li {
+    width: 100%;
+    padding: 20px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+.main-menu-body a {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: rgb(237, 242, 246);
+}
+.login {
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+    border: 2px solid rgb(237, 242, 246);
+    border-radius: 4px;
+    color: rgb(237, 242, 246);
+    background-color: rgba(37, 43, 70, 0);
+}
+/* Navigation Footer */
+.main-menu-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+.main-menu-footer img {
+    margin: 0px 1rem;
+}
+.hamburger-menu {
+    align-self: center;
+}
