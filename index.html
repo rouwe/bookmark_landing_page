@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -68,8 +68,9 @@
     </nav>
   </header>
   <main>
+
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section id="hero-section">
       <!-- Hero Copy -->
       <div class="hero-copy-container">
         <h1 class="hero-heading">A Simple Bookmark Manager</h1>
@@ -87,11 +88,12 @@
         <div class="hero-image-bg"></div>
       </div>
     </section>
+
     <!-- Features Section -->
-    <section>
+    <section id="features-section">
       <!-- Features - Copy -->
       <div>
-        <h2>Features</h2>
+        <h2 class="section-heading">Features</h2>
         <p class="section-sub-heading">
           Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
         </p>
@@ -99,62 +101,70 @@
       <!-- Features Tab -->
         <!-- Tab Links -->
         <div class="tab">
-          <button id="defaultOpen" class="tablinks btn" onclick="openFeature(event, 'simpleBookmarking')">Simple Bookmarking</button>
-          <button class="tablinks btn" onclick="openFeature(event, 'speedySearching')">Speedy Searching</button>
-          <button class="tablinks btn" onclick="openFeature(event, 'easySharing')">Easy Sharing</button>
+          <div class="tablink-box top-border">
+            <button id="defaultOpen" class="tablinks" onclick="openFeature(event, 'simpleBookmarking')">Simple Bookmarking</button>
+          </div>
+          <div class="tablink-box">
+            <button class="tablinks" onclick="openFeature(event, 'speedySearching')">Speedy Searching</button>
+          </div>
+          <div class="tablink-box">
+            <button class="tablinks" onclick="openFeature(event, 'easySharing')">Easy Sharing</button>
+          </div>
         </div>
         <!-- Tab Contents -->
         <!-- Features Tab 1 -->
         <div id="simpleBookmarking" class="tabcontent">
           <!-- Tab 1 Image -->
-          <div class="tab-img tab-box">
-            <img src="images/illustration-features-tab-1.svg" alt="">
+          <div class="tab-box">
+            <img class="tab-img" src="images/illustration-features-tab-1.svg" alt="Bookmark in One Click">
+            <div class="hero-image-bg"></div>
           </div>
           <!-- Tab 1 Copy -->
-          <div class="tab-img tab-box">
-            <h3>Bookmark in one click</h3>
-            <p>
+          <div class="tab-copy tab-box">
+            <h3 class="section-heading">Bookmark in one click</h3>
+            <p class="section-sub-heading">
               Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.
             </p>
-            <a class="" href="#">More Info</a>
+            <a class="tab-btn btn" href="#">More Info</a>
           </div>
         </div>
         <!-- Features Tab 2 -->
         <div id="speedySearching" class="tabcontent">
           <!-- Tab 2 Image -->
-          <div class="tab-img tab-box">
-            <img src="images/illustration-features-tab-2.svg" alt="">
+          <div class=" tab-box">
+            <img class="tab-img" src="images/illustration-features-tab-2.svg" alt="">
           </div>
           <!-- Tab 2 Copy -->
-          <div class="tab-img tab-box">
-            <h3>Intelligent search</h3>
-            <p>
+          <div class="tab-copy tab-box">
+            <h3 class="section-heading">Intelligent search</h3>
+            <p class="section-sub-heading">
               Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
             </p>
-            <a class="" href="#">More Info</a>
+            <a class="tab-btn btn" href="#">More Info</a>
           </div>
         </div>
         <!-- Features Tab 3 -->
         <div id="easySharing" class="tabcontent">
           <!-- Tab 3 Image -->
-          <div class="tab-img tab-box">
-            <img src="images/illustration-features-tab-3.svg" alt="">
+          <div class="tab-box">
+            <img class="tab-img" src="images/illustration-features-tab-3.svg" alt="">
           </div>
           <!-- Tab 3 Copy -->
-          <div class="tab-img tab-box">
-            <h3>Share your bookmarks</h3>
-            <p>
+          <div class="tab-copy tab-box">
+            <h3 class="section-heading">Share your bookmarks</h3>
+            <p class="section-sub-heading">
               Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
             </p>
-            <a class="" href="#">More Info</a>
+            <a class="tab-btn btn" href="#">More Info</a>
           </div>
         </div>
     </section>
+
     <!-- Download Section -->
     <section>
       <!-- Download Copy -->
       <div>
-        <h2>Download the extension</h2>
+        <h2 class="section-heading">Download the extension</h2>
         <p class="section-sub-heading">
           We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.
         </p>
@@ -186,11 +196,12 @@
         </div>
       </div>
     </section>
+
     <!-- FAQs Section -->
     <section>
       <!-- FAQs Copy -->
       <div>
-        <h2>Frequently Asked Questions</h2>
+        <h2 class="section-heading">Frequently Asked Questions</h2>
         <p class="section-sub-heading">
           Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
         </p>
@@ -231,12 +242,13 @@
       </div>
       <a class="btn" href="#" target="_blank">More info</a>
     </section>
+
     <!-- Contact Section -->
     <section>
       <!-- Contact Copy -->
       <div>
-        <span>35,000+ already joined</span>
-        <h2>Stay up-to-date with what we're doing</h2>
+        <span class="contact-members">35,000+ already joined</span>
+        <h2 class="section-heading">Stay up-to-date with what we're doing</h2>
       </div>
       <!-- Contact Form -->
       <div>
