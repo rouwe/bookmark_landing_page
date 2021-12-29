@@ -102,13 +102,13 @@
         <!-- Tab Links -->
         <div class="tab">
           <div class="tablink-box top-border">
-            <button id="defaultOpen" class="tablinks" onclick="openFeature(event, 'simpleBookmarking')">Simple Bookmarking</button>
+            <button type="button" id="defaultOpen" class="tablinks" onclick="openFeature(event, 'simpleBookmarking')">Simple Bookmarking</button>
           </div>
           <div class="tablink-box">
-            <button class="tablinks" onclick="openFeature(event, 'speedySearching')">Speedy Searching</button>
+            <button type="button" class="tablinks" onclick="openFeature(event, 'speedySearching')">Speedy Searching</button>
           </div>
           <div class="tablink-box">
-            <button class="tablinks" onclick="openFeature(event, 'easySharing')">Easy Sharing</button>
+            <button type="button" class="tablinks" onclick="openFeature(event, 'easySharing')">Easy Sharing</button>
           </div>
         </div>
         <!-- Tab Contents -->
@@ -209,7 +209,7 @@
       <div class="faqs-panels">
         <!-- Question 1 -->
         <div class="faqs-question-container">
-          <button class="accordion" >What is Bookmark?</button>
+          <button type="button" class="accordion" >What is Bookmark?</button>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="arrow-icon" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
         </div>
         <!-- Answer 1 -->
@@ -220,7 +220,7 @@
         </div>
         <!-- Question 2 -->
         <div  class="faqs-question-container">
-          <button class="accordion" >How can I request a new browser?</button>
+          <button type="button" class="accordion" >How can I request a new browser?</button>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="arrow-icon" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
         </div>
         <!-- Answer 2 -->
@@ -231,7 +231,7 @@
         </div>
         <!-- Question 3 -->
         <div  class="faqs-question-container">
-          <button class="accordion" n>Is there a mobile app?</button>
+          <button type="button" class="accordion" n>Is there a mobile app?</button>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="arrow-icon" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
         </div>
         <!-- Answer 3 -->
@@ -242,7 +242,7 @@
         </div>
         <!-- Question 4 -->
         <div  class="faqs-question-container">
-          <button class="accordion">What about other Chromium browsers?</button>
+          <button type="button" class="accordion">What about other Chromium browsers?</button>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="arrow-icon" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
         </div>
         <!-- Answer 4 -->
@@ -256,20 +256,18 @@
     </section>
 
     <!-- Contact Section -->
-    <section>
+    <section id="contact-section">
       <!-- Contact Copy -->
-      <div>
+      <div class="contact-copy">
         <span class="contact-members">35,000+ already joined</span>
         <h2 class="section-heading">Stay up-to-date with what we're doing</h2>
       </div>
       <!-- Contact Form -->
-      <div>
-        <form>
-          <label for="email" style="display: none;">Email</label>
-          <input type="email" id="email" name="userEmail" placeholder="Enter your email address">
-          <button type="submit" class="btn">Contact Us</button>
-        </form>
-      </div>
+      <form class="contact-form">
+        <label for="email" style="display: none;">Email</label>
+        <input type="email" id="email" name="userEmail" placeholder="Enter your email address">
+        <button class="contact-btn btn" type="submit" class="btn">Contact Us</button>
+      </form>
     </section>
 </main>
   <!-- Footer Section -->
