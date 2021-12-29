@@ -179,6 +179,9 @@ main {
     box-shadow: 0px 5px 5px 1px rgb(229, 231, 244);
 }
 /* Sections */
+section {
+    margin: 20px 0 80px;
+}
 .section-heading {
     text-align: center;
     font-size: 1.5rem;
@@ -205,6 +208,16 @@ main {
 .top-border {
     border-top: 1px solid rgb(224, 224, 234);
 }
+.tabcontent, .tab-img {
+    width: 100%;
+}
+.tabcontent {
+    display: none;
+    padding-bottom: 1rem;
+}
+.tab-open {
+    display: block;
+}
 #defaultOpen {
     color: rgba(37, 43, 70, 0.85);
     border-bottom: 4px solid rgb(250, 87, 87);
@@ -225,22 +238,68 @@ main {
 }
 .tab-box {
     position: relative;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .tab-box .hero-image-bg {
     top: 33px;
-    left: -260px;
+    left: -240px;
     height: 195px;
 }
-.tabcontent, .tab-img {
-    width: 100%;
-}
 .tab-copy {
+    margin-top: 20px;
     padding: 40px 0;
 }
 .tab-btn {
     display: none;
     color: rgb(235, 246, 255);
-    background-color: #5167e1;
+    background-color: rgb(81, 103, 225);
     padding: 15px 20px;
+}
+/* Download Section */
+#download-section, .downloads {
+    display: flex;
+    flex-direction: column;
+}
+.download-copy {
+    margin: 0 0 4.5rem 0;
+}
+.downloads {
+    justify-content: center;
+    align-items: center;
+}
+.downloads div {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 1.2rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 20px 1px rgba(229, 231, 244, 0.95);
+}
+.browser-img {
+    margin-bottom: 1.8rem;
+}
+.browser-type {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: rgba(37, 43, 70, 0.85);
+    margin-bottom: 0.8rem;
+}
+.browser-version {
+    font-size: 0.9rem;
+    color: rgb(149, 149, 159);
+    margin-bottom: 2rem;
+}
+.downloads-dots {
+    margin-bottom: 1.3rem;
+    width: 100%;
+}
+.download-btn {
+    font-size: 0.8rem;
+    padding: 15px 30px;
+    color: rgb(229, 231, 244);
+    background-color: rgb(81, 103, 225);
 }
