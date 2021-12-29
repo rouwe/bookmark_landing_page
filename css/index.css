@@ -238,7 +238,6 @@ section {
 }
 .tab-box {
     position: relative;
-    /* margin-bottom: 40px; */
 }
 .tab-box .hero-image-bg {
     top: 33px;
@@ -303,3 +302,50 @@ section {
     color: rgb(229, 231, 244);
     background-color: rgb(81, 103, 225);
 }
+/* FAQs Section */
+#faqs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.faqs-copy {
+    margin-bottom: 4rem;
+}
+.faqs-question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 234);
+}
+.accordion {
+    padding: 1.2rem 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none;
+    color: rgba(37, 43, 70, 0.85);
+    background-color: rgba(0, 0, 0, 0);
+}
+.faqs-panel {
+    margin-bottom: 1rem;
+}
+.panel {
+    display: none;
+    color: rgba(37, 43, 70, 0.75);
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+}
+.panel-btn {
+    display: inline-block;
+    color: rgb(235, 246, 255);
+    background-color: #5167e1;
+    padding: 15px 25px;
+    margin-top: 2.5rem;
+}
+/* Change arrow color on active*/
+/* .arrow-icon {
+    fill: red;
+    stroke: red;
+    stroke-width: 3px;
+} */
