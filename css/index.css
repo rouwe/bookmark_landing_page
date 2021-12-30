@@ -33,7 +33,7 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-.main-menu {
+#main-menu {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,6 +55,9 @@ header {
 }
 .menu-logo-img {
     fill: rgb(37, 43, 70);
+}
+#hamburger-close {
+    margin-right: 1rem;
 }
 /* Navigation Body */
 .main-menu-body {
@@ -97,9 +100,6 @@ header {
 }
 .main-menu-footer img {
     margin: 0 1rem;
-}
-.hamburger-menu {
-    align-self: center;
 }
 
 /* Main */
@@ -164,6 +164,9 @@ main {
     font-weight: 500;
     margin: 2rem 0;
 }
+.hero-cta-container a {
+    box-shadow: 0px 5px 5px 1px rgb(229, 231, 244);
+}
 .btn {
     padding: 15px 13px;
     border-radius: 5px;
@@ -179,7 +182,6 @@ main {
 }
 .download-firefox-cta {
     color: rgb(89, 88, 102);
-    box-shadow: 0px 5px 5px 1px rgb(229, 231, 244);
 }
 /* Sections */
 section {
@@ -385,15 +387,27 @@ section {
     flex-direction: column;
     width: 100%;
 }
+.email-error {
+    display: none;
+    margin: -1.2rem 0 1rem;
+    padding: 5px 10px;
+    font-size: 0.6rem;
+    font-style: italic;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(250, 87, 87);
+}
 #email {
+    width: 100%;
     font-size: 0.9rem;
     border-radius: 5px;
     border: none;
     padding: 15px 20px;
     margin: 1rem 0;
     color: rgb(37, 43, 70);
+    /* border: 3px solid rgb(250, 87, 87); */
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15); */
 }
 .contact-form input::placeholder {
     color: rgba(37, 43, 70, 0.30);
@@ -403,7 +417,7 @@ section {
     border-radius: 5px;
     border: none;
     color: rgb(224, 224, 234);
-    background-color: #fa5757;
+    background-color: rgb(250, 87, 87);
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15); 
 }
 /* Footer Section */

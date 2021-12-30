@@ -26,9 +26,9 @@
     <!-- Main Navigation -->
     <nav class="main-nav-container">
       <!-- Main Menu -->
-      <img class="hamburger-menu nav-icon" src="images/icon-hamburger.svg" alt="Main Menu">
+      <img id="hamburger-open" class="nav-icon" src="images/icon-hamburger.svg" alt="Main Menu">
 
-      <div class="main-menu">
+      <div id="main-menu">
 
         <!-- Navigation Head -->
         <div class="main-menu-head">
@@ -41,7 +41,7 @@
               </g>
             </g>
           </svg>
-          <img class="hamburger-close nav-icon" src="images/icon-close.svg" alt="Close Navigation Menu">
+          <img id="hamburger-close" class="nav-icon" src="images/icon-close.svg" alt="Close Navigation Menu">
         </div>
 
         <!-- Navigation Body @All-->
@@ -259,8 +259,11 @@
       </div>
       <!-- Contact Form -->
       <form class="contact-form">
+        <div class="email-field-container">
         <label for="email" style="display: none;">Email</label>
-        <input type="email" id="email" name="userEmail" placeholder="Enter your email address">
+          <input type="email" id="email" name="userEmail" placeholder="Enter your email address">
+          <span class="email-error">Whoops, make sure it's an email</span>
+        </div>
         <button class="contact-btn btn" type="submit" class="btn">Contact Us</button>
       </form>
     </section>
@@ -298,5 +301,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Roweme</a>.
   </p>
+  <script src="js/index.js"></script>
 </body>
 </html>
