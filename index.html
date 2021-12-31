@@ -260,8 +260,17 @@
       <!-- Contact Form -->
       <form class="contact-form">
         <div class="email-field-container">
-        <label for="email" style="display: none;">Email</label>
+          <label for="email" style="display: none;">Email</label>
           <input type="email" id="email" name="userEmail" placeholder="Enter your email address">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="10" cy="10" r="10" fill="#FA5959"/>
+              <g fill="#FFF" transform="translate(9 5)">
+                <rect width="2" height="7" rx="1"/>
+                <rect width="2" height="2" y="8" rx="1"/>
+              </g>
+            </g>
+          </svg>
           <span class="email-error">Whoops, make sure it's an email</span>
         </div>
         <button class="contact-btn btn" type="submit" class="btn">Contact Us</button>
@@ -287,7 +296,7 @@
       <a class="footer-link" href="#" target="_blank">Contact</a>
     </div>
     <!-- Footer Social -->
-    <div class="footer-social">
+    <div id="footer-social">
       <a class="footer-social-link" href="#" target="_blank">
         <img class="footer-social-icon" src="images/icon-facebook.svg" alt="Share Facebook">
       </a>
