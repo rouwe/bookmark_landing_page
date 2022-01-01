@@ -221,13 +221,6 @@ section {
     display: none;
     padding-bottom: 1rem;
 }
-.tab-open {
-    display: block;
-}
-#defaultOpen {
-    color: rgba(37, 43, 70, 0.85);
-    border-bottom: 4px solid rgb(250, 87, 87);
-}
 .tablinks {
     display: block;
     font-kerning: none;
@@ -260,6 +253,13 @@ section {
     color: rgb(235, 246, 255);
     background-color: rgb(81, 103, 223);
     padding: 15px 20px;
+}
+.openTabContent {
+    display: block;
+}
+.openTabLink {
+    color: rgba(37, 43, 70, 0.85);
+    border-bottom: 4px solid rgb(250, 87, 87);
 }
 /* Download Section */
 #download-section, .downloads {

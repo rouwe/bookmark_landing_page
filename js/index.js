@@ -32,6 +32,89 @@ function closeNav() {
     // Modify class of footer social icons
     footerSocial.style.display = 'flex';
 };
+
+// Features Section
+/* 
+ * Tabs
+    Inputs:
+        (class) tablinks -> tabs navigation
+        (class) tabcontent -> tabs content
+    Allow user to open and close tabs
+*/
+let tabToOpen;
+let prevTabToClose = 'Simple Bookmarking';
+let prevTabLinkIdx = 0;
+// Add Event listener
+const tabLinks = document.getElementsByClassName("tablinks");
+const tabContents = document.getElementsByClassName("tabcontent");
+const tabImg = document.getElementsByClassName("tab-img");
+
+for (const tablink of tabLinks) {
+    tablink.addEventListener('click', checkTabState);
+}
+function openTab(tab) {
+    // Open a tab
+    const addBottomBorder = (idx) => {
+        // Add bottom border for active tab
+        tabLinks[idx].classList.add('openTabLink');  
+    }
+    if (prevTabToClose === 'Simple Bookmarking') {
+        prevTabLinkIdx = 0;
+        addBottomBorder(prevTabLinkIdx);
+    } else if (prevTabToClose === 'Speedy Searching') {
+        prevTabLinkIdx = 1;
+        addBottomBorder(prevTabLinkIdx);
+        const backgroundImg = tabImg[prevTabLinkIdx].nextSibling.nextElementSibling;
+        backgroundImg.style.top = '4rem';
+    } else {
+        prevTabLinkIdx = 2;
+        addBottomBorder(prevTabLinkIdx);
+        const backgroundImg = tabImg[prevTabLinkIdx].nextSibling.nextElementSibling;
+        backgroundImg.style.top = '4rem';
+    }
+    const targetToOpen = document.getElementById(tab);
+    targetToOpen.style.display = 'block';
+}
+function closeTab(tab, prevTabLinkIdx) {
+    // Close a tab
+    const removeBottomBorder = (prevTabLinkIdx) => {
+        // Remove bottom border for previous tab
+        tabLinks[prevTabLinkIdx].classList.remove('openTabLink');
+    }
+    removeBottomBorder(prevTabLinkIdx);
+    if (prevTabToClose === 'Simple Bookmarking') {
+        prevTabLinkIdx = 0;
+    } else if (prevTabToClose === 'Speedy Searching') {
+        prevTabLinkIdx = 1;
+    } else {
+        prevTabLinkIdx = 2;
+    }
+    const targetToClose = document.getElementById(tab);
+    targetToClose.style.display = 'none';
+}
+function getTabId(tabLinkText) {
+    // Get id of clicked tab
+    const formatTab = tabLinkText.split(" ");
+    toOpen = formatTab[0].toLowerCase() + formatTab[1];
+    return toOpen;
+}
+function checkTabState() {
+    // Monitor and controls the state of tabs
+    const tabLinkText = this.innerText;
+    tabToOpen = getTabId(tabLinkText);
+    if (prevTabToClose === tabLinkText) {
+        // Re-open the current tab
+        console.log(tabToOpen)
+        openTab(tabToOpen);
+    } else {
+        // Close the previous tab and opens a new one
+        tabToClose = getTabId(prevTabToClose);
+        prevTabToClose = tabLinkText;
+        closeTab(tabToClose, prevTabLinkIdx);
+        openTab(tabToOpen);        
+    }
+};
+
 // FAQs Section
 /* 
  * Accordion
@@ -89,7 +172,7 @@ function closePreviousPanel(previousPanel, arrowIconContainer, arrowIcon) {
 // Arrow icon variables
 let prevArrowContainer;
 let prevArrowIcon; 
-// Monitors and controls the state of panels
+// Monitor and controls the state of panels
 function checkPanelState() {
     const panelToOpen = this.nextSibling.nextElementSibling;
     currentPanelToClose = panelToOpen;
@@ -107,4 +190,4 @@ function checkPanelState() {
         closePreviousPanel(prevPanelToClose, arrowIconContainer, arrowIcon);
         openPanel(panelToOpen, arrowIconContainer, arrowIcon);
     }
-}
+};
