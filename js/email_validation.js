@@ -1,4 +1,12 @@
 // Contact Section
+/* 
+ * Error Message
+    (id) email -> input field
+    (class) contact-btn -> submit button
+    (class) email-field-container -> element that holds input and submit
+    (class) email-error -> text to display when error occurs
+    (tag) email-field-container svg -> error message icon   
+*/
 const contactEmail = document.getElementById('email');
 const contactSubmit = document.getElementsByClassName('contact-btn')[0];
 const emailFieldContainer = document.getElementsByClassName('email-field-container')[0];

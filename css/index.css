@@ -115,16 +115,16 @@ main {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 60px;
+    margin: 0 0 60px;
 }
 /* Hero Copy */
 .hero-copy-container {
     padding: 1rem 0 2rem;
 }
 .hero-heading {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
 }
 .section-sub-heading {
     font-size: 0.9rem;
@@ -154,7 +154,7 @@ main {
     top: 90px;
     right: -260px;
     width: 500px;
-    height: 180px;
+    height: 190px;
     border-radius: 95px;
     background-color: rgb(83, 104, 223);
     z-index: -1;
@@ -169,7 +169,7 @@ main {
     box-shadow: 0px 5px 5px 1px rgb(229, 231, 244);
 }
 .btn {
-    padding: 15px 13px;
+    padding: 1rem;
     border-radius: 5px;
     text-decoration: none;
     letter-spacing: 0.5px;
@@ -473,4 +473,105 @@ footer {
 }
 .attribution a {
     color: rgb(250, 87, 87);
+}
+/* Desktop */
+@media screen and (min-width: 768px) {
+/* Header Section */
+    header {
+        padding: 50px 8rem;
+    }
+    #hamburger-open {
+        display: none;
+    }
+    .main-nav-container {
+        display: block;
+        box-sizing: border-box;
+    }
+    #main-menu {
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .main-menu-head {
+        display: none;
+    }
+    .main-menu-body {
+        display: flex;
+        margin: 0;
+    }
+    .main-menu-body li {
+        display: inline-block;
+        margin-right: 2.5rem;
+        padding: 0;
+    }
+    .main-menu-body a, .login {
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: rgba(37, 43, 70, 0.85);
+    }
+    .main-menu-body .login-box {
+        position: relative;
+        top: -9px;
+        margin-right: 0;
+    }
+    .login {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        padding: 12px 30px;
+        border-radius: 7px;
+        color: rgb(224, 224, 234);
+        background-color: rgb(250, 87, 87);
+    }
+    .main-menu-footer {
+        display: none;
+    }
+/* Main */
+    main {
+        padding: 0 8rem;
+    }
+/* Hero Section */
+    /* Copy Section */
+    #hero-section {
+        flex-direction: row;
+        padding: 0;
+    }
+    .hero-copy-container {
+        padding: 4rem 3rem 2rem 0;
+    }
+    .hero-heading {
+        font-size: 3rem;
+        text-align: left;
+    }
+    .hero-copy-container .section-sub-heading {
+        text-align: left;
+    }
+    .hero-cta-container {
+        justify-content: flex-start;
+    }
+    .download-chrome-cta {
+        margin-right: 0.5rem;
+    }
+    .download-firefox-cta {
+        margin-left: 0.5rem;
+    }
+    /* Hero Image Section */
+    .hero-image-container {
+        width: 100%;
+        padding: 2rem 0 0 0;
+    }
+    .hero-image {
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .hero-image-bg {
+        top: 150px;
+        right: -370px;
+        width: 768px;
+        height: 310px;
+        border-radius: 260px;
+    }
 }
