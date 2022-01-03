@@ -587,7 +587,7 @@ footer {
     }
     /* Features Copy */
     .section-heading {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .features-copy, .download-copy, .faqs-copy {
         width: 45%;
@@ -664,5 +664,29 @@ footer {
         width: 45%;
         margin: 0 auto;
         margin-top: 2rem;
+    }
+/* Contact Section */
+    #contact-section {
+        margin: 120px -8rem 0;
+    }
+    /* Contact Copy */
+    #contact-section .section-heading {
+        font-size: 1.6rem;
+    }
+    .contact-copy {
+        width: 30%;
+        padding: 0 1rem;
+    }
+    .contact-form {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .email-field-container {
+        width: 20%;
+        margin: 0 1rem;
+    }
+    .contact-btn {
+        padding: 1rem 1.5rem;
     }
 }
