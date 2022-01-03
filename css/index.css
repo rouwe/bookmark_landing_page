@@ -586,7 +586,7 @@ footer {
     .section-heading {
         font-size: 1.6rem;
     }
-    .features-copy {
+    .features-copy, .download-copy, .faqs-copy {
         width: 45%;
         margin: 0 auto;
     }
@@ -636,5 +636,23 @@ footer {
         width: 768px;
         height: 330px;
         border-radius: 260px;
+    }
+/* Downloads Section */
+    #download-section {
+        padding: 4rem 0 1rem;
+    }
+    /* Download Copy */
+    .downloads {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .downloads div {
+        margin: 0rem 1rem 4rem;
+    }
+    .downloads div:nth-child(2) {
+        margin-top: 4rem;
+    }
+    .downloads div:last-child {
+        margin-top: 8rem;
     }
 }
