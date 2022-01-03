@@ -219,6 +219,7 @@ section {
 }
 .tabcontent {
     display: none;
+    flex-direction: column;
     padding-bottom: 1rem;
 }
 .tablinks {
@@ -240,7 +241,7 @@ section {
     z-index: -1;
 }
 .tab-box .hero-image-bg {
-    top: 33px;
+    top: 2rem;
     left: -240px;
     height: 195px;
 }
@@ -549,6 +550,9 @@ footer {
     .hero-copy-container .section-sub-heading {
         text-align: left;
     }
+    .section-sub-heading {
+        font-size: 1rem;
+    }
     .hero-cta-container {
         justify-content: flex-start;
     }
@@ -572,6 +576,65 @@ footer {
         right: -370px;
         width: 768px;
         height: 310px;
+        border-radius: 260px;
+    }
+/* Features Section */
+    #features-section {
+        padding-top: 2rem;
+    }
+    /* Features Copy */
+    .section-heading {
+        font-size: 1.6rem;
+    }
+    .features-copy {
+        width: 45%;
+        margin: 0 auto;
+    }
+    /* Features Tab */
+    /* Tab links */
+    .tab {
+        flex-direction: row;
+        padding: 0 10rem;
+    }
+    .top-border {
+        border-top: none; 
+    }
+    /* Tab Contents */
+    .openTabContent {
+        display: flex;
+    }
+    .tabcontent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tab-box {
+        width: 45%;
+    }
+    .tab-box .hero-image-bg {
+        top: 5rem;
+    }
+    /* Tab Copy */
+    .tab-copy {
+        width: 45%;
+        padding-left: 2rem;
+    }
+    .tab-copy .section-heading, .tab-copy .section-sub-heading {
+        text-align: left;
+    }
+    .tab-btn {
+        display: inline-block;
+    }
+    /* Tab Image */
+    .tab-img {
+        width: 90%;
+    }
+    .simpleBookmarkingImg {
+        width: 100%;
+    }
+    .tab-box .hero-image-bg {
+        left: -360px;
+        width: 768px;
+        height: 330px;
         border-radius: 260px;
     }
 }

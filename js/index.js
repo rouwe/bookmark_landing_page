@@ -45,7 +45,7 @@ let tabToOpen;
 let prevTabToClose = 'Simple Bookmarking';
 let prevTabLinkIdx = 0;
 // Add Event listener
-const tabLinks = document.getElementsByClassName("tablinks");
+const tabLinks = document.getElementsByClassName("tablink-box");
 const tabContents = document.getElementsByClassName("tabcontent");
 const tabImg = document.getElementsByClassName("tab-img");
 
@@ -65,15 +65,15 @@ function openTab(tab) {
         prevTabLinkIdx = 1;
         addBottomBorder(prevTabLinkIdx);
         const backgroundImg = tabImg[prevTabLinkIdx].nextSibling.nextElementSibling;
-        backgroundImg.style.top = '4rem';
+        backgroundImg.style.top = '5rem';
     } else {
         prevTabLinkIdx = 2;
         addBottomBorder(prevTabLinkIdx);
         const backgroundImg = tabImg[prevTabLinkIdx].nextSibling.nextElementSibling;
-        backgroundImg.style.top = '4rem';
+        backgroundImg.style.top = '5rem';
     }
     const targetToOpen = document.getElementById(tab);
-    targetToOpen.style.display = 'block';
+    targetToOpen.style.display = 'flex';
 }
 function closeTab(tab, prevTabLinkIdx) {
     // Close a tab
