@@ -689,4 +689,27 @@ footer {
     .contact-btn {
         padding: 1rem 1.5rem;
     }
+/* Footer Section */
+    footer {
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 0 8rem;
+    }
+    /* Footer Logo */
+
+    /* Footer Links */
+    .footer-nav {
+        flex-direction: row;
+        margin: 1.5rem 0;
+        margin-left: 4rem;
+    }
+    .footer-nav a {
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+        margin: 0 1rem;
+    }
+    /* Footer Social */
+    #footer-social {
+        margin-left: auto;
+    }
 }
