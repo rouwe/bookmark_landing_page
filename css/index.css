@@ -465,6 +465,9 @@ footer {
     width: 24px;
     height: 24px;
 }
+.twitter {
+    padding-top: 3px;
+}
 /* Attribution Section*/
 .attribution {
     text-align: center;
@@ -517,6 +520,11 @@ footer {
         letter-spacing: 1px;
         color: rgba(37, 43, 70, 0.85);
     }
+    .main-menu-body a:hover {
+        transition-timing-function: ease-in;
+        transition-duration: 0.2s;
+        color: rgb(250, 87, 87);
+    }
     .main-menu-body .login-box {
         position: relative;
         top: -9px;
@@ -529,6 +537,13 @@ footer {
         border-radius: 7px;
         color: rgb(224, 224, 234);
         background-color: rgb(250, 87, 87);
+    }
+    .login:hover {
+        transition-timing-function: ease-in;
+        transition-duration: 0.2s;
+        color: rgb(250, 87, 87);
+        border: 2px solid rgb(250, 87, 87);
+        background-color: rgb(255, 255, 255);
     }
     .main-menu-footer {
         display: none;
@@ -564,6 +579,19 @@ footer {
     }
     .download-firefox-cta {
         margin-left: 0.5rem;
+    }
+    .download-chrome-cta:hover {
+        transition-timing-function: ease-out;
+        transition-duration: 0.10s;
+        color: rgba(83, 104, 223, 0.9);
+        border: 2px solid rgba(81, 102, 223, 0.85);
+        background-color: rgb(255, 255, 255);
+    }
+    .download-firefox-cta:hover {
+        transition-timing-function: ease-out;
+        transition-duration: 0.10s;
+        color: rgba(36, 41, 70, 0.9);
+        border: 2px solid rgba(37, 43, 70, 0.85);
     }
     /* Hero Image Section */
     .hero-image-container {
@@ -602,6 +630,11 @@ footer {
     .top-border {
         border-top: none; 
     }
+    .tablinks:hover {
+        transition-timing-function: ease-in;
+        transition-duration: 0.2s;
+        color: rgb(250, 87, 87);
+    }
     /* Tab Contents */
     .openTabContent {
         display: flex;
@@ -623,6 +656,9 @@ footer {
     }
     .tab-copy .section-heading, .tab-copy .section-sub-heading {
         text-align: left;
+    }
+    #simpleBookmarking .tab-btn:hover {
+        background: red !important;
     }
     .tab-btn {
         display: inline-block;
@@ -658,6 +694,7 @@ footer {
     .downloads div:last-child {
         margin-top: 8rem;
     }
+    .download-btn
 /* FAQs Section */
     /* FAQs panels */
     .faqs-panels {
@@ -689,6 +726,13 @@ footer {
     .contact-btn {
         padding: 1rem 1.5rem;
     }
+    .contact-btn:hover {
+        transition-timing-function: ease-out;
+        transition-duration: 0.1s;
+        border: 2px solid rgb(250, 87, 87);
+        color: rgb(250, 87, 87);
+        background-color: rgb(255, 255, 255);
+    }
 /* Footer Section */
     footer {
         justify-content: flex-start;
@@ -708,8 +752,14 @@ footer {
         letter-spacing: 0.5px;
         margin: 0 1rem;
     }
+    .footer-link:hover {
+        color: rgb(250, 87, 87);
+    }
     /* Footer Social */
     #footer-social {
         margin-left: auto;
+    }
+    .footer-social-link path:hover {
+        fill: rgb(250, 87, 87);
     }
 }
