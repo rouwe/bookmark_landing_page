@@ -7,32 +7,24 @@
         (id) hamburger-close -> element to be click to close the navigation menu
     Allows user to open and close navigation menu
 */
-// Add Event handlers on hamburger icon & hamburger-close icon
 const hamburgerOpen = document.getElementById("hamburger-open");
 const mainMenu = document.getElementById("main-menu");
 const hamburgerClose = document.getElementById("hamburger-close");
 const footerSocial = document.getElementById("footer-social");
-// let isOpen = false;
 
 hamburgerOpen.addEventListener('click', openNav)
 function openNav() {
     // Modify class to open navigation
     hamburgerOpen.style.display = 'none';
     mainMenu.style.display = 'flex';
-
-    // Modify class of footer social icons
     footerSocial.style.display = 'none';
 };
 hamburgerClose.addEventListener('click', closeNav)
 function closeNav() {
-    // Modify class to close navigation
     hamburgerOpen.style.display = 'block';
     mainMenu.style.display = 'none';
-
-    // Modify class of footer social icons
     footerSocial.style.display = 'flex';
 };
-
 // Features Section
 /* 
  * Tabs
@@ -44,7 +36,6 @@ function closeNav() {
 let tabToOpen;
 let prevTabToClose = 'Simple Bookmarking';
 let prevTabLinkIdx = 0;
-// Add Event listener
 const tabLinks = document.getElementsByClassName("tablink-box");
 const tabContents = document.getElementsByClassName("tabcontent");
 const tabImg = document.getElementsByClassName("tab-img");
@@ -103,11 +94,9 @@ function checkTabState() {
     const tabLinkText = this.innerText;
     tabToOpen = getTabId(tabLinkText);
     if (prevTabToClose === tabLinkText) {
-        // Re-open the current tab
         console.log(tabToOpen)
         openTab(tabToOpen);
     } else {
-        // Close the previous tab and opens a new one
         tabToClose = getTabId(prevTabToClose);
         prevTabToClose = tabLinkText;
         closeTab(tabToClose, prevTabLinkIdx);
@@ -124,11 +113,11 @@ function checkTabState() {
         (this.nextSibling) panel -> the panel answer to be opened
     Allow user to open and close accordions answer panel
 */
-let panelIsOpen; // true if a panel is open, false otherwise
-let panelToOpen; // Clicked panel to be opened
-let currentPanelToClose; // if the currently opened panel needs to be closed 
-let prevPanelToClose; // Previously opened panel to close
-let openedPanelCount = 0; // Limits the opened panel to (1)
+let panelIsOpen;
+let panelToOpen;
+let currentPanelToClose;
+let prevPanelToClose;
+let openedPanelCount = 0;
 
 // Add Event Listeners to each question and panel
 const questionContainer = document.getElementsByClassName("faqs-question-container");
@@ -169,24 +158,20 @@ function closePreviousPanel(previousPanel, arrowIconContainer, arrowIcon) {
     previousPanel.style.display = 'none';
     setArrowInActive(prevArrowContainer, prevArrowIcon);
 }
-// Arrow icon variables
 let prevArrowContainer;
 let prevArrowIcon; 
-// Monitor and controls the state of panels
 function checkPanelState() {
+    // Monitor and controls the state of panels
     const panelToOpen = this.nextSibling.nextElementSibling;
     currentPanelToClose = panelToOpen;
     const arrowIconContainer = this.getElementsByClassName("arrow-icon")[0];
     const arrowIcon = this.getElementsByTagName("svg")[0];
 
-    // Opens a panel if no other panel is currently opened 
     if (!panelIsOpen && openedPanelCount < 1) {
         openPanel(panelToOpen, arrowIconContainer, arrowIcon);
     } else if (prevPanelToClose === currentPanelToClose) {
-        // Close the current panel
         closeCurrentPanel(currentPanelToClose, arrowIconContainer, arrowIcon);
     } else {
-        // Close the previous panel and opens up a new one
         closePreviousPanel(prevPanelToClose, arrowIconContainer, arrowIcon);
         openPanel(panelToOpen, arrowIconContainer, arrowIcon);
     }
