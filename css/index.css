@@ -770,4 +770,8 @@ footer {
     .footer-social-link path:hover {
         fill: rgb(250, 87, 87);
     }
+    /* Attribution */
+    #attribution {
+        margin: 0;
+    }
 }
