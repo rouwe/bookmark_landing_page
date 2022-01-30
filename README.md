@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://rouwe.github.io/bookmark_landing_page/)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/bookmark-landing-page-IEriQCHuD)
+- Live Site URL: [Add live site URL here](https://rouwe.github.io/fem_bookmark_landing_page/)
 
 ## My process
 
